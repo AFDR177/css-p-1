@@ -38,7 +38,7 @@
   font-style: italic;
 }
 .task_4 p {
-  font-family: open sans;
+  font-family: 'Open Sans', sans-serif;
   font-display: swap;
   font-weight: 700;
 }
@@ -97,21 +97,22 @@
 }
 .task_8 h1 {
   max-height: 50px;
-  overflow: auto;
+  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 /* Завдання №9. */
 .task_9 h1 {
-  word-break: break-all;
+  /* word-break: break-all; */
+  overflow-wrap: normal; /* не дозволяє словам переноситися на новий рядок, якщо вони не поміщаються в один рядок. */
   word-spacing: 30px;
 }
 .task_9 div {
   hyphens: manual;
 }
 .task_9 p {
-  word-break: break-word;
+  word-break: break-all;
 }
 .task_9 textarea {
-  resize: both;
+  resize: none;
 }
